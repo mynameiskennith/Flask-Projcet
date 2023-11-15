@@ -96,6 +96,26 @@
 			.invoice-box.rtl table tr td:nth-child(2) {
 				text-align: left;
 			}
+
+			.input-box { 
+				position: relative; 
+			}
+
+			input { 
+				display: block; 
+				border: 1px solid #d7d6d6; 
+				background: #fff; 
+				padding: 10px 10px 10px 20px; 
+				width: 195px; 
+			}
+
+			.unit { 
+				position: absolute; 
+				display: block; 
+				left: 5px; 
+				top: 10px; 
+				z-index: 9; 
+			}
 		</style>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
@@ -118,7 +138,11 @@
 								</td>
 
 								<td>
-									Invoice #: 123<br />
+									<div class="input-box">
+										<input value="" autofocus="autofocus"/>
+										<span class="unit">£</span>
+									</div>
+									<input type="text" value="Invoice #: 123"><br />
 									Created: January 1, 2023<br />
 									Due: February 1, 2023
 								</td>
