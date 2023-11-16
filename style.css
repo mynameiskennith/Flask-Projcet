@@ -109,3 +109,9 @@ input {
     top: 10px; 
     z-index: 9; 
 }
+
+.input-box .prefix {
+    font-weight: 300;
+    font-size: 14px;
+    color: #999;
+  }
