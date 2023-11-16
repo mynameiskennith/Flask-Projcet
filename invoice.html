@@ -16,14 +16,15 @@
 					<td colspan="2">
 						<table>
 							<tr>
-								<td class="title">
-									<img
+								<td class="title" style="width: 50%;">
+									
+									<!-- <img
 										src="https://sparksuite.github.io/simple-html-invoice-template/images/logo.png"
 										style="width: 50%; max-width: 70%"
-									/>
+									/> -->
 								</td>
 
-								<td>
+								<td style="width: 50%;">
 									<div class="input-group mb-1">
 										<span class="input-group-text" id="basic-addon1">Invoice #:</span>
 										<input type="text" class="form-control" value="123" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
@@ -47,15 +48,17 @@
 						<table>
 							<tr>
 								<td>
-									Sparksuite, Inc.<br />
-									12345 Sunny Road<br />
-									Sunnyville, CA 12345
+									<div class="form-floating" style="width:70%">
+										<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+										<label for="floatingTextarea2">Sender Adress</label>
+									</div>
 								</td>
 
-								<td>
-									Acme Corp.<br />
-									John Doe<br />
-									john@example.com
+								<td style="display: flex;justify-content: flex-end;">
+									<div class="form-floating text-end" style="width: 70%;">
+										<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+										<label for="floatingTextarea2">Reciever Adress</label>
+									</div>
 								</td>
 							</tr>
 						</table>
@@ -98,6 +101,7 @@
 				<tr class="item">
 					<td>
 						<div class="input-group" style="width: 70%">
+							<label class="p-2">1.</label>
 							<input type="text" class="form-control" value="Website design" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
 						</div>
 					</td>
@@ -113,6 +117,7 @@
 				<tr class="item">
 					<td>
 						<div class="input-group" style="width: 70%">
+							<label class="p-2">2.</label>
 							<input type="text" class="form-control" value="Hosting (3 months)" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
 						</div>
 					</td>
@@ -128,6 +133,7 @@
 				<tr class="item">
 					<td>
 						<div class="input-group" style="width: 70%">
+							<label class="p-2">3.</label>
 							<input type="text" class="form-control" value="Domain name (1 year)" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
 						</div>
 					</td>
@@ -143,7 +149,7 @@
 				<tr class="total">
 					<td></td>
 
-					<td>Total: $385.00</td>
+					<td><label class="p-2">Total : </label><label class="p-2">385.00</label><label class="p-2">₹</label></td>
 				</tr>
 			</table>
 		</div>
