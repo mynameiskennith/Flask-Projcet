@@ -14,7 +14,7 @@ context = {'my_name': my_name, 'item1': item1, 'item2': item2, 'item3': item3,
 template_loader = jinja2.FileSystemLoader('./')
 template_env = jinja2.Environment(loader=template_loader)
 
-html_template = 'basic-template.html'
+html_template = 'invoice_card.html'
 template = template_env.get_template(html_template)
 output_text = template.render(context)
 
