@@ -18,6 +18,6 @@ html_template = 'invoice_card.html'
 template = template_env.get_template(html_template)
 output_text = template.render(context)
 
-config = pdfkit.configuration(wkhtmltopdf='/usr/local/bin/wkhtmltopdf')
+config = pdfkit.configuration(wkhtmltopdf='C:\Program Files\wkhtmltopdf')
 output_pdf = 'pdf_generated.pdf'
 pdfkit.from_string(output_text, output_pdf, configuration=config, css='style.css')
