@@ -36,9 +36,9 @@ background-color:#eee;
     <div class="card">
     <div class="card-body">
     <div class="invoice-title">
-    <h4 class="float-end font-size-15">Invoice #DS0204 <span class="badge bg-success font-size-12 ms-2">Paid</span></h4>
+    <h4 class="float-end font-size-15">#DS0204 <span class="badge bg-success font-size-12 ms-2">Paid</span></h4>
     <div class="mb-4">
-    <h2 class="mb-1 text-muted">Bootdey.com</h2>
+    <h2 class="mb-1 text-muted">INVOICE</h2>
     </div>
     <div class="text-muted">
     <p class="mb-1">3184 Spruce Drive Pittsburgh, PA 15201</p>
@@ -51,7 +51,7 @@ background-color:#eee;
     <div class="col-sm-6">
     <div class="text-muted">
     <h5 class="font-size-16 mb-3">Billed To:</h5>
-    <h5 class="font-size-15 mb-2">Preston Miller</h5>
+    <h5 class="font-size-15 mb-2">{{my_name}}</h5>
     <p class="mb-1">4068 Post Avenue Newfolden, MN 56738</p>
     <p class="mb-1"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6b3b190e181f0405260207070e192b0a190612181b1245080406">[email&#160;protected]</a></p>
     <p>001-234-5678</p>
@@ -66,7 +66,7 @@ background-color:#eee;
     </div>
     <div class="mt-4">
     <h5 class="font-size-15 mb-1">Invoice Date:</h5>
-    <p>12 Oct, 2020</p>
+    <p>{{today_date}}</p>
     </div>
     <div class="mt-4">
     <h5 class="font-size-15 mb-1">Order No:</h5>
@@ -95,8 +95,9 @@ background-color:#eee;
     <th scope="row">01</th>
     <td>
     <div>
-    <h5 class="text-truncate font-size-14 mb-1">Black Strap A012</h5>
-    <p class="text-muted mb-0">Watch, Black</p>
+    <h5 class="text-truncate font-size-14 mb-1">{{item1}}</h5>
+item1_sub ="Watch, Black"
+<p class="text-muted mb-0">{{item1_sub}}</p>
     </div>
     </td>
     <td>$ 245.50</td>
@@ -108,8 +109,8 @@ background-color:#eee;
     <th scope="row">02</th>
     <td>
     <div>
-    <h5 class="text-truncate font-size-14 mb-1">Stainless Steel S010</h5>
-    <p class="text-muted mb-0">Watch, Gold</p>
+    <h5 class="text-truncate font-size-14 mb-1">{{item2}}</h5>
+    <p class="text-muted mb-0">{{item2_sub}}</p>
     </div>
     </td>
     <td>$ 245.50</td>

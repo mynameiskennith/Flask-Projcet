@@ -3,12 +3,14 @@ import pdfkit
 from datetime import datetime
 
 my_name = "Frank Andrade"
-item1 = "TV"
-item2 = "Couch"
-item3 = "Washing Machine"
+item1 = "Black Strap A012"
+item1_sub ="Watch, Black"
+item2 = "Stainless Steel S010"
+item2_sub="Watch, Gold"
+
 today_date = datetime.today().strftime("%d %b, %Y")
 
-context = {'my_name': my_name, 'item1': item1, 'item2': item2, 'item3': item3,
+context = {'my_name': my_name, 'item1': item1,'item1_sub': item1_sub, 'item2': item2,'item2_sub': item2_sub, 'item3': item3,
            'today_date': today_date}
 
 template_loader = jinja2.FileSystemLoader('./')
